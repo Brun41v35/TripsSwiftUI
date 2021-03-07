@@ -33,7 +33,24 @@ struct ContentView: View {
                 }
                 .frame(width: view.size.width, height: 180, alignment: .top)
                 .background(Color.purple)
-                .edgesIgnoringSafeArea(.all)
+                
+                HStack{
+                    Button(action: {}) {
+                        Text("Hóteis")
+                            .font(.custom("Avenir Medium", size: 17))
+                            .foregroundColor(Color.white)
+                    }
+                    .frame(width: 100, height: 50)
+                    .background(Color.blue)
+                                        
+                    Button(action: {}) {
+                        Text("Pacotes")
+                            .font(.custom("Avenir Medium", size: 17))
+                            .foregroundColor(Color.white)
+                    }
+                    .frame(width: 100, height: 50)
+                    .background(Color.orange)
+                }
                 
                 List {
                     Text("Rio de Janeiro")
@@ -43,6 +60,7 @@ struct ContentView: View {
                 }
             }
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
