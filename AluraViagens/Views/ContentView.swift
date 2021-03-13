@@ -41,22 +41,38 @@ struct ContentView: View {
                             .foregroundColor(Color.white)
                     }
                     .frame(width: 100, height: 50)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 10))
                     .background(Color.blue)
-                                        
+                    .offset(x: 50)
+                    
+                    Spacer()
+                    
                     Button(action: {}) {
                         Text("Pacotes")
                             .font(.custom("Avenir Medium", size: 17))
                             .foregroundColor(Color.white)
                     }
                     .frame(width: 100, height: 50)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.orange, lineWidth: 10))
                     .background(Color.orange)
+                    .offset(x: -50)
                 }
+                .offset(y: -25)
                 
-                List {
-                    Text("Rio de Janeiro")
-                    Text("Ceará")
-                    Text("Atibaia")
-                    Text("São Paulo")
+                List(viagens) { viagem in
+                    VStack(alignment: .leading) {
+                        Text(viagem.titulo)
+                        Image(viagem.imagem)
+                            .resizable()
+                            .frame(height: 125)
+                        
+                        HStack {
+                            Text(viagem.quantidadeDeDias)
+                            Spacer()
+                            Text(viagem.valor)
+                        }
+                        
+                    }
                 }
             }
         }
