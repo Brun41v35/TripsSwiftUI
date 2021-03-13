@@ -11,6 +11,8 @@
 		7ED4CF3725F416FA006066E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4CF3625F416FA006066E6 /* ContentView.swift */; };
 		7ED4CF3925F41702006066E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED4CF3825F41702006066E6 /* Assets.xcassets */; };
 		7ED4CF3C25F41702006066E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED4CF3B25F41702006066E6 /* Preview Assets.xcassets */; };
+		7EF51C8A25FD43FD005035FC /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 7EF51C8925FD43FD005035FC /* Models */; };
+		7EF51C8D25FD440C005035FC /* viagens.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EF51C8C25FD440C005035FC /* viagens.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		7ED4CF3825F41702006066E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ED4CF3B25F41702006066E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7ED4CF3D25F41702006066E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF51C8925FD43FD005035FC /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		7EF51C8C25FD440C005035FC /* viagens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = viagens.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +56,11 @@
 		7ED4CF3325F416FA006066E6 /* AluraViagens */ = {
 			isa = PBXGroup;
 			children = (
+				7EF51C8925FD43FD005035FC /* Models */,
 				7ED4CF3425F416FA006066E6 /* AluraViagensApp.swift */,
 				7ED4CF3625F416FA006066E6 /* ContentView.swift */,
 				7ED4CF3825F41702006066E6 /* Assets.xcassets */,
+				7EF51C8C25FD440C005035FC /* viagens.json */,
 				7ED4CF3D25F41702006066E6 /* Info.plist */,
 				7ED4CF3A25F41702006066E6 /* Preview Content */,
 			);
@@ -126,6 +132,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EF51C8A25FD43FD005035FC /* Models in Resources */,
+				7EF51C8D25FD440C005035FC /* viagens.json in Resources */,
 				7ED4CF3C25F41702006066E6 /* Preview Assets.xcassets in Resources */,
 				7ED4CF3925F41702006066E6 /* Assets.xcassets in Resources */,
 			);
